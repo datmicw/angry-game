@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
     {
         float moveInput = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
-
+        // Xoay nhân vật
         if (moveInput > 0)
         {
             transform.rotation = Quaternion.Euler(0, 0, 0);
